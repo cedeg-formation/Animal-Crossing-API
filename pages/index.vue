@@ -1,18 +1,15 @@
 <template>
   <div class="p-6">
     <h2 class="text-emerald-400 text-2xl">Liste des habitants</h2>
-    <ul>
-      <List :title="'Nom'" :item="'Jojo'" />
-      <List :title="'Personalité'" :item="'Sympa'" />
-      <List :title="'Anniversaire'" :item="'03/02/1960'" />
-      <List :title="'id'" :item="'01'" />
-      <li>
-        <img
-          alt="image d'un personnage"
-          src="https://acnhapi.com/v1/images/villagers/1"
-        />
-      </li>
-    </ul>
+    <Animal
+      :villagers="{
+        0: { name: 'Nom', item: 'Jojo' },
+        1: { name: 'Personalité', item: 'Sympa' },
+        2: { name: 'Anniversaire', item: '03/02/1960' },
+        3: { name: 'id', item: '01' },
+      }"
+      :url="'https://acnhapi.com/v1/images/villagers/1'"
+    />
   </div>
 </template>
 <script setup lang="ts"></script>
