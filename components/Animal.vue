@@ -1,6 +1,6 @@
 <template>
   <ul>
-    <List v-for="(info, index) in villager" :title="index" :item="info" />
+    <List v-for="(info, key) in villager" :title="key" :item="info" />
     <li>
       <img alt="image d'un personnage" :src="url" />
     </li>

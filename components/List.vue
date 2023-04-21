@@ -1,7 +1,12 @@
 <template>
   <li>
-    <p>
-      <span class="font-bold text">{{ title }} :</span> {{ item }}
+    <p v-if="title === 'name'">
+      <span class="font-bold text">{{ title }} :</span>
+      {{ item["name-EUfr"] }}
+    </p>
+    <p v-else>
+      <span class="font-bold text">{{ title }} :</span>
+      {{ item }}
     </p>
   </li>
 </template>
