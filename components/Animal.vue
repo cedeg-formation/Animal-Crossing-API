@@ -1,10 +1,6 @@
 <template>
   <ul>
-    <List
-      v-for="villager in villagers"
-      :title="villager['name']"
-      :item="villager['item']"
-    />
+    <List v-for="(info, index) in villager" :title="index" :item="info" />
     <li>
       <img alt="image d'un personnage" :src="url" />
     </li>
@@ -14,11 +10,11 @@
 <script>
 export default {
   name: "Animal",
+
   props: {
-    villagers: [],
+    villager: [Object],
     url: String,
   },
+  methods: {},
 };
 </script>
-
-<style scoped></style>

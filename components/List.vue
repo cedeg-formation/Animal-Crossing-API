@@ -1,7 +1,7 @@
 <template>
   <li>
     <p>
-      <span class="font-bold">{{ title }} :</span> {{ item }}
+      <span class="font-bold text">{{ title }} :</span> {{ item }}
     </p>
   </li>
 </template>
