@@ -18,6 +18,5 @@
   </div>
 </template>
 <script setup>
-const dataVillagers = await $fetch("http://acnhapi.com/v1/villagers");
-console.log(dataVillagers["ant00"]);
+const dataVillagers = await $fetch("https://acnhapi.com/v1/villagers");
 </script>

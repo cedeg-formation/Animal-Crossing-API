@@ -12,7 +12,7 @@ export default {
   name: "Animal",
 
   props: {
-    villager: [Object],
+    villager: Object,
     url: String,
   },
   methods: {},
