@@ -28,7 +28,6 @@
       <span class="font-bold text">{{ title }} :</span>
       {{ item["catch-EUfr"] }}
     </p>
-
     <p v-else>
       <span class="font-bold text">{{ title }} :</span>
       {{ item }}

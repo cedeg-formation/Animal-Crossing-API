@@ -1,8 +1,15 @@
 <template>
-  <ul>
-    <List v-for="(info, key) in villager" :title="key" :item="info" />
-    <li>
-      <img alt="image d'un personnage" :src="url" />
+  <ul class="flex flex-col flex-wrap justify-center">
+    <List
+      class="flex justify-center flex-wrap"
+      v-for="(info, key) in villager"
+      :title="key"
+      :item="info"
+    />
+    <li class="flex justify-center p-6">
+      <NuxtLink :to="'/villager/' + villager['id']">
+        <img alt="image d'un personnage" :src="url"
+      /></NuxtLink>
     </li>
   </ul>
 </template>

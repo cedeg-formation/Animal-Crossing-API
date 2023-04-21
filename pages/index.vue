@@ -1,11 +1,16 @@
 <template>
   <div class="p-6">
-    <h2 class="text-emerald-400 text-2xl">Liste des habitants</h2>
-    <Animal
-      v-for="dataVillage in dataVillagers"
-      :villager="dataVillage"
-      :url="dataVillage['image_uri']"
-    />
+    <h2 class="text-emerald-400 text-2xl text-center pb-6">
+      Liste des habitants
+    </h2>
+    <div class="flex flex-col md:flex-row flex-wrap">
+      <Animal
+        v-for="dataVillage in dataVillagers"
+        :villager="dataVillage"
+        :url="dataVillage['image_uri']"
+      />
+    </div>
+
     <!--    <Animal
       :villagers="{
         0: { title: 'Nom', item: 'Jojo' },
